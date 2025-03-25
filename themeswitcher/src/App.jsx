@@ -14,6 +14,8 @@ function App() {
     setThemeMode("dark")
   }
 
+  // Actual change in a theme
+
   return (
 
     <ThemeProvider value={{ themeMode,lightTheme, darktheme}}>
