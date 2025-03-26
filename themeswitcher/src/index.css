@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+
+/* .dark{
+    filter: invert(100%);
+} */
+
+@custom-variant dark (&:where(.dark, .dark *));
