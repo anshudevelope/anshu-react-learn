@@ -123,18 +123,17 @@ export default function Card() {
 ## remember to change config in tailwind
 
 ```javascript
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  darkMode: "class",
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+Change in configuration in index.css file
+
+@import "tailwindcss";
+
+// By using filter property in dark class
+/* .dark{
+    filter: invert(100%);
+} */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
 
 
 
