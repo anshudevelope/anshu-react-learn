@@ -15,7 +15,7 @@ function App() {
 
   // Solution by using useMemo()
 
-  let double = useMemo(() => expensiveTask(input), [input]);
+  let double = useMemo(() => expensiveTask(input), [input]);   // memoizes only the last updated value
 
   return (
     <>
